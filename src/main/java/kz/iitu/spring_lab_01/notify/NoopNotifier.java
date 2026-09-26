@@ -1,11 +1,9 @@
 package kz.iitu.spring_lab_01.notify;
 
-import org.springframework.context.annotation.Fallback;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component("noop")
-@Fallback                                  // fallback option (Spring 6.2+)
 @Order(99)
 public class NoopNotifier implements Notifier {
 
