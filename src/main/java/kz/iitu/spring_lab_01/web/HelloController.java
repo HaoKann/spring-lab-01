@@ -28,7 +28,7 @@ public class HelloController {
         response.put("serverTime", LocalDateTime.now().toString());
         return response;
     }
-
+    // Индивидуальное задание (Вариант 1)
     // Метод теперь находится внутри класса
     @GetMapping("/api/calc")
     public Map<String, Object> calculate(
